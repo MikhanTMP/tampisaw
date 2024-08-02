@@ -1,0 +1,255 @@
+body {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Ubuntu,sans-serif;
+   /* background-image: url(/images/localpics/90bac44a-e76d-4d3c-8e3a-51de53a2e55c.jpg);*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    display: grid;
+    place-items: center; /* Center content horizontally and vertically */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    gap: 15px;
+}
+
+
+h1 {
+    text-align: center;
+    color: #5469d4;
+}
+
+h2 {
+    text-align: center;
+    color: #333333;
+}
+
+.form-section {
+    display: none;
+}
+
+label {
+    display: block;
+    color: #666666;
+}
+#gender-gender{
+    display: flex;
+    flex-direction: row;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+input[type="file"],select{
+    cursor: pointer;
+}
+
+.gender-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #666666;
+}
+
+.gender-options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 30px;
+}
+
+.gender-radio {
+    margin-right: 5px;
+}
+
+.checkbox-label {
+    display: block;
+    margin-bottom: 15px;
+    color: #666666;
+    font-size: 13px;
+}
+#pass-warning{
+    font-size: 10px;
+    font-style: italic;
+    color: red;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(84, 105, 212);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+.signupform{
+    width: 600px;
+}
+#buttons {
+    display: flex;
+    gap: 100px;
+}
+.jumptologin{
+    text-align: center;
+}
+.jumptologin p{
+    font-size: 15px;
+}
+.footer-link span {
+    font-size: 14px;
+    text-align: center;
+}
+.listing{
+  text-align: center;
+}
+.listing a {
+    color: #697386;
+    font-weight: 600;
+    margin: 0 10px;
+    text-align: center;
+    text-decoration: unset;
+}
+
+
+/*LEFT SIDE*/
+.image-cont{
+    width: 50%;
+    background-image: url("/images/owners_reg/caribbean-beach-1941529_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/*Animation*/
+section{
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    background: #3586ff;
+    overflow: hidden;
+    z-index: -99;
+    top: 0;
+  }
+  section .air{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+    background-size: 1000px 100px
+  }
+  section .air.air1{
+    animation: wave 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+  }
+  section .air.air2{
+    animation: wave2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+  }
+  section .air.air3{
+    animation: wave 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+  }
+  section .air.air4{
+    animation: wave2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+  }
+  @keyframes wave{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: 1000px; 
+    }
+  }
+  @keyframes wave2{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: -1000px; 
+    }
+  }
+
+
+@media only screen and (max-width: 475px) {
+    .container {
+        flex-direction: column;
+    }
+    .image-cont{
+        height: 100px;
+        width: 100%;
+        background-position: center;
+    }
+}
+
+
+#backhome {
+  font-size: 13px;
+  text-decoration: none;
+  
+  position: absolute;
+  display: flex;
+  height: 3em;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee4b;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+  left: 10px;
+  top: 10px;
+ }
+ 
+ #backhome > svg {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+ }
+ #backhome:hover > svg {
+  font-size: 1.2em;
+  transform: translateX(-5px);
+ }
+ 
+ #backhome:hover {
+  box-shadow: -3px -3px 11px #4b4949;
+  transform: translateY(-2px);
+ }

@@ -1,0 +1,482 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.my-profile{
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    background-color: #f9f9f9;
+    padding-top: 0px;
+    width: 100%;
+}
+#sidebar {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  
+  .list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .item {
+    padding: 8px 10px;
+  }
+  
+  .item a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+  }
+  
+  /* Active state for the Overview link */
+  .item.active {
+    background-color: #007bff;
+  }
+  
+  .item.active a {
+    color: #fff;
+  }
+  
+  /* Hover styles for links */
+  .item:not(.active):hover {
+    background-color: #cfb7b7;
+    transition: background-color 0.2s ease;
+  }
+  
+
+  /* Basic styling */
+.resort-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    padding-top: 0px;
+    width: 100%;
+  }
+  
+  .resort-details {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .resort-details h2 {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .resort-details span {
+    font-weight: normal;
+  }
+  
+  /* File upload styling */
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="file"] {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Add Room button styling */
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Images section */
+  .resort-details h2 + h2 {
+    margin-top: 15px;
+  }
+  
+  .imageflex{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+#imageflex{
+    background-color: #0f0f0f;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    flex: 1; /* Make flex items grow equally to fill the available space */
+    min-width: 200px; /* Set a minimum width for the flex items */
+    border-radius: 15px;
+}
+
+/* Basic styling for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+
+  }
+  
+  /* Styling for the left-side element */
+  .left-side {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  /* Styling for the right-side element */
+  .right-side {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Styling for the Logout button */
+  .logout-button {
+    background-color: #fff;
+    color: #007bff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .logout-button:hover {
+    background-color: #f0f0f0;
+  }
+  .card {
+    width: 100%;
+    height: 100%;
+    background: #ebebeb;
+    overflow: hidden;
+
+    border-radius: 10px;
+  }
+  .cardcard{
+    display: flex;
+  }
+  .card-contents{
+    padding: 10px;
+  }
+  .circles,
+  .browser {
+    height: 30px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .circles {
+    width: 20%;
+    gap: 8px;
+    padding: 10px;
+  }
+  
+  .c {
+    width: 09px;
+    height: 9px;
+    border-radius: 50%;
+    box-shadow: inset 2px 2px 5px rgba(235, 235, 235, 0.356);
+  }
+  
+  .c:first-child {
+    background-color: red;
+  }
+  
+  .c:nth-child(2) {
+    background-color: rgb(204, 167, 4);
+  }
+  
+  .c:last-child {
+    background-color: green;
+  }
+  
+  .browser {
+    width: 80%;
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .chevrons {
+    display: flex;
+  }
+  
+  .search-bar {
+    position: relative;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: rgb(88, 88, 88);
+    box-shadow: inset 2px 2px 2px #05050525;
+  }
+  
+  .search-bar svg {
+    position: absolute;
+    left: 10px;
+  }
+
+.edit-resort-info{
+    background-color: rgb(242, 241, 238);
+    padding: 10px;
+}
+/* Basic styling */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  select {
+    appearance: none;
+    background: url('https://cdn.jsdelivr.net/npm/font-awesome@5.15.3/fonts/fontawesome-webfont.woff2') no-repeat right center;
+    background-size: 16px;
+    padding-right: 30px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button.edit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  button.edit-button i {
+    margin-right: 5px;
+  }
+  
+  button.edit-button:hover {
+    background-color: #0056b3;
+  }
+.add-rooms{
+    background-color: rgb(242, 241, 238);
+    padding: 5px;
+    height: 115vh;
+    overflow-y: scroll;
+}
+
+.add-rooms {
+    display: none;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-rooms h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.add-rooms label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.add-rooms input[type="text"],
+.add-rooms input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.add-rooms .amenities {
+    margin-bottom: 20px;
+}
+
+.add-rooms .amenities h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.add-rooms .amenities label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.add-rooms button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.add-rooms #cancelbtn {
+    background-color: red;
+}
+
+.content-2 {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.bookings{
+    width: 100%;
+    height: 100vh;
+}
+
+.bookinginfo {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bookinginfo h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+
+}
+
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.content-details {
+    flex: 1;
+}
+
+.content-details p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.edit-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.more-info-1,
+.more-info-2 {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.more-info-1 h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: 0 auto;
+}
